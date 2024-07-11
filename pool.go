@@ -62,5 +62,6 @@ func (p *Pool) Wait() error {
 
 func (p *Pool) Close() error {
 	p.cancelFn()
+	p.currentPool.Wait()
 	return p.basePool.Wait()
 }
