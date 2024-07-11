@@ -3,6 +3,9 @@ path=./...
 
 GOBIN=$(shell go env GOPATH)/bin
 
+example1:
+	go run examples/example1.go
+
 test: setup
 	$(GOBIN)/richgo test $(path) $(args)
 
