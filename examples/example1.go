@@ -1,10 +1,3 @@
-# Welcome to GoPool
-
-GoPool is a very simple and easy to use pool of Goroutines.
-
-## Usage
-
-```golang
 package main
 
 import (
@@ -49,4 +42,3 @@ func main() {
 		panic(err)
 	}
 }
-```
